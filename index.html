@@ -1,85 +1,500 @@
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./CSS/Home/Home.css">
-    <!-- <link type="text/css" rel="stylesheet" href="../../CSS/HOME/MediaQH.css"> -->
-    <link rel="website icon" type="png" href="./IMGS/Home/LogoRMKWEB.png">
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-
-    <title>Home - MAKARYAN Raphael</title>
-</head>
-
-<body>
-
-
-    <header>
-        <img src="./IMGS/Home/LogoRMKWEB.png" id="Logo">
-
-        <div class="HeaderButtons">
-            <a href="./index.html" id="TextHomeH">HOME</a>
-            <a href="./HTML/Propos/APropos.html" id="TextProposH">A PROPOS</a>
-            <a href="./HTML/Projets/Projets.html" id="TextProjetsH">PROJETS</a>
-            <a href="./HTML/Contact/Contact.html" id="TextContactH">CONTACT</a>
-        </div>
-    </header>
-
-
-    
-    <div id="TitleAll"> 
-        <p id="TitleRaph">Raphael</p>
-        <p id="TitleMAK">Makaryan</p>
-        <p id="TitleForm">Developer Web & Mobile</p>
-    </div>
-
-
-    <div id="AllPage">
-
-
-        <p id="TexteAProposP2">A propos de moi</p>
-        <div class="aPropos">
-            
-            <p id="DescAProposP2">Qui-suis je ? <br> Mon parcours ? <br> Mes diplomes ? <br> Tout ce qui est a <br> savoir sur moi et  <br>  mon histoire ! 📕</p>
-            <a href="./HTML/Propos/APropos.html" id="NavAProposP2"> > Journal intime</a>
-            <a href="./HTML/Propos/APropos.html" id="ImageAProposP2"><img src="./IMGS/Home/ImgAPropos.png"></a>
-        </div>
-        
-
-
-        <p id="TexteProjetsP2">Projets</p>
-        <div class="Projets">
-            <a href="./HTML/Projets/Projets.html" id="ImageProjetsP2"><img src="./IMGS/Home/Image Projets.png"></img></a>
-            <p id="DescProjetsP2">Mes projets terminés ou en working progress ici ! 🔨</p>
-            <a href="./HTML/Projets/Projets.html" id="NavProjetsP2"> > Cahier des charges</a>
-        </div>
-
-        <p id="TexteContactP2">Contact</p>   
-        <div class="Contact">
-            <p id="DescContactP2">Si vous voulez me contactez : par e-mail, téléphone, etc... 📠</p>
-            <a href="./HTML/Contact/Contact.html" id="ImageContactP2"><img src="./IMGS/Home/Image Contact.png"></a>
-            <a href="./HTML/Contact/Contact.html" id="NavContactP2"> > Journal</a> 
-        </div>
-
-
-        <div id="LeFooter">
-            <p id="TexteFin">KiZo / MAKARYAN Raphael | 3 ESPLANADE AUGUSTIN AUSSÉDAT 74960 ANNECY</p>
-        </div>
-
-    </div>
-
-
-    
+@media screen and (orientation: landscape) {
 
 
 
 
-    <script src="./JS/Home/portfoliorm.js"></script>
-</body>
+    /*
+*******************************************************************************************************
+******************************************** ALL  *********************************************
+*******************************************************************************************************
+*/
 
-</html>
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(../../IMGS/Projets/Background.gif);
+        background-repeat: repeat;
+        background-size: cover;
+        height: auto;
+        width: 100vw;
+        overflow-x: hidden;
+
+    }
+
+
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    /*
+*******************************************************************************************************
+******************************************** typos  *********************************************
+*******************************************************************************************************
+*/
+
+
+    /* *************** POUR LES TEXTES ******************  */
+
+    @font-face {
+        font-family: 'TypoTexteAll';
+        src: url(../../TYPOS/Tonnelier-Medium.ttf);
+    }
+
+
+    /* *************** POUR LES TITRES ******************  */
+
+
+    @font-face {
+        font-family: "TypoTitleJECT";
+        src: url(../../TYPOS/ColaneiraDemo-Regular.otf);
+    }
+
+
+    @font-face {
+        font-family: 'TypoTitlePRJ';
+        src: url(../../TYPOS/Cetary.otf);
+    }
+
+
+
+    /* *************** POUR LES SOUS TITRES ******************  */
+
+    @font-face {
+        font-family: "TypoSousTitre";
+        src: url(../../TYPOS/Socheerful-Regular.ttf);
+    }
+
+
+    /*
+*******************************************************************************************************
+******************************************** COULEURS  *********************************************
+*******************************************************************************************************
+*/
+
+
+
+
+    :root {
+        --couleur_vert: #7AA36E;
+        --couleur_blanche: white;
+
+    }
+
+
+
+
+    /*
+*******************************************************************************************************
+******************************************** HEADER  *********************************************
+*******************************************************************************************************
+*/
+
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: 20%;
+    }
+
+
+
+    #Logo {
+        height: 16vh;
+        padding: 50px;
+
+    }
+
+
+
+    .HeaderButtons {
+        display: flex;
+        justify-content: space-around;
+        height: 13%;
+        width: 40%;
+
+    }
+
+
+    #TextHomeH {
+
+        color: var(--couleur_vert);
+        font-size: 1.5vh;
+        font-family: 'TypoTexteAll';
+        height: 2vh;
+        width: 3vw;
+        text-decoration: none;
+
+    }
+
+
+    #TextProposH {
+
+        color: var(--couleur_vert);
+        font-size: 1.5vh;
+        font-family: 'TypoTexteAll';
+        height: 2vh;
+        width: 5vw;
+        text-decoration: none;
+
+    }
+
+
+
+    #TextProjetsH {
+
+        color: var(--couleur_blanche);
+        font-size: 1.5vh;
+        font-family: 'TypoTexteAll';
+        height: 4vh;
+        width: 4vw;
+        text-decoration: none;
+
+    }
+
+
+
+    #TextLabH {
+
+        color: var(--couleur_vert);
+        font-size: 1.5vh;
+        font-family: 'TypoTexteAll';
+        height: 4vh;
+        width: 2vw;
+        text-decoration: none;
+
+    }
+
+
+    #TextContactH {
+
+        color: var(--couleur_vert);
+        font-size: 1.5vh;
+        font-family: 'TypoTexteAll';
+        height: 4vh;
+        width: 4vw;
+        text-decoration: none;
+
+    }
+
+
+
+    #TextHomeH:hover,
+    #TextLabH:hover,
+    #TextContactH:hover,
+    #TextHomeH:hover {
+        color: var(--couleur_blanche);
+    }
+
+
+
+    /*
+*******************************************************************************************************
+******************************************** P1  *********************************************
+*******************************************************************************************************
+*/
+
+    #AllPage {
+        display: flex;
+        width: 50%;
+        height: 50%;
+    }
+
+
+    #TitleAll {
+
+        position: relative;
+        height: 70%;
+        width: 100%;
+
+    }
+
+
+
+    #TitlePRJ {
+        position: absolute;
+
+        font-family: 'TypoTitlePRJ';
+
+        left: 31%;
+
+        height: 16vh;
+        width: 37vw;
+        font-size: 8vw;
+
+        color: var(--couleur_vert);
+    }
+
+
+
+    #TitleJECT {
+        position: absolute;
+        font-family: 'TypoTitleJECT';
+        left: 29%;
+        top: 28%;
+        height: 14vh;
+        width: 57vw;
+        font-size: 7.5vw;
+        color: var(--couleur_vert);
+        transition: all 1s;
+
+    }
+
+
+    #TitleJECT:hover {
+
+        transition: all 1s;
+        font-family: 'TypoTitlePRJ';
+
+
+    }
+
+
+    /*
+*******************************************************************************************************
+******************************************** P2  *********************************************
+*******************************************************************************************************
+*/
+
+
+    .LesBoites {
+        position: absolute;
+        margin-top: -5%;
+        margin-left: 9%;
+        margin-right: -8%;
+        display: flex;
+        height: 80%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: space-between;
+    }
+
+
+
+
+    .IntBoites {
+        width: 45%;
+        transition: width 1s;
+        margin-left: 3%;
+        padding: 1%;
+        background: var(--couleur_vert);
+        margin-bottom: 1vh;
+    }
+
+
+
+
+
+
+
+    /******************* PSYSHOP ***************************** */
+
+
+
+    .PS {
+        width: 100%;
+        margin: auto;
+    }
+
+
+    #TextPS {
+
+        color: var(--couleur_blanche);
+        position: relative;
+        font-family: 'TypoTexteAll';
+        font-size: 1.5vw;
+        left: 17%;
+        width: 22%;
+        height: 5%;
+
+    }
+
+    #TexteRosePS {
+        color: pink;
+
+    }
+
+    #TexteVertPS {
+        color: rgb(5, 134, 33);
+
+    }
+
+
+    /******************* typing game ***************************** */
+
+
+    .TP {
+        width: 100%;
+        margin: auto;
+    }
+
+
+    #TextTP {
+
+        color: var(--couleur_blanche);
+        font-family: 'TypoTexteAll';
+        position: relative;
+        font-size: 1.5vw;
+        top: 36%;
+        left: 3%;
+        width: 47%;
+        height: 5%;
+    }
+
+    #TexteBleuTP {
+        color: rgb(0, 135, 189);
+
+    }
+
+    #TexteVioletTP {
+        color: purple;
+
+    }
+
+
+
+
+
+
+
+    /******************* CACHE CACHE ***************************** */
+
+
+
+    .CC {
+        width: 100%;
+        margin: auto;
+    }
+
+
+    #TextCC {
+
+        color: var(--couleur_blanche);
+        font-family: 'TypoTexteAll';
+        position: relative;
+        font-size: 1.5vw;
+        top: 36%;
+        left: 3%;
+        width: 53%;
+        height: 5%;
+
+    }
+
+
+    #TexteJauneCC {
+        color: yellow;
+
+    }
+
+    #TexteNoirCC {
+        color: #61615F;
+
+    }
+
+
+
+    /******************* DESTINATION ***************************** */
+    .DD {
+        width: 100%;
+        margin: auto;
+    }
+
+    #TextDD {
+        color: var(--couleur_blanche);
+        font-family: 'TypoTexteAll';
+        position: relative;
+        font-size: 1.5vw;
+        top: 36%;
+        left: 12%;
+        width: 53%;
+        height: 5%;
+    }
+
+
+    #TexteBlancDD {
+        color: white;
+
+    }
+
+    #TexteNoirDD {
+        color: #61615F;
+
+    }
+
+
+    #TexteRougeDD {
+        color: #FC3200;
+
+    }
+
+    #TexteDoréDD {
+        color: #E5BA1C;
+
+    }
+
+    /******************* DISCORD  ***************************** */
+
+
+    .DC {
+        width: 100%;
+        margin: auto;
+    }
+
+
+    #TextDC {
+        color: var(--couleur_blanche);
+        font-family: 'TypoTexteAll';
+        position: relative;
+        font-size: 1.5vw;
+        top: 36%;
+        left: 12%;
+        width: 53%;
+        height: 5%;
+    }
+
+
+    #TexteDC {
+        color: #7289da
+    }
+
+
+
+    /*
+*******************************************************************************************************
+******************************************** FIN  *********************************************
+*******************************************************************************************************
+*/
+
+
+
+    #LeFooter {
+
+        display: flex;
+        position: relative;
+        top: 175%;
+        height: 8vh;
+        width: 100vw;
+
+
+    }
+
+
+    #TexteFin {
+
+        position: relative;
+        left: 76%;
+        display: flex;
+        justify-content: center;
+        color: gray;
+        font-family: 'TypoTexteAll';
+        top: 119%;
+
+    }
+
+}
