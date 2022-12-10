@@ -1,0 +1,375 @@
+@media screen and (orientation:portrait) {
+
+
+
+        /*
+        *******************************************************************************************************
+        ******************************************** ALL  *********************************************
+        *******************************************************************************************************
+        */
+
+
+        body {
+                margin: 0;
+                padding: 0;
+                background-image: url(../../IMGS/Propos/Background.gif);
+                background-repeat: repeat;
+                background-size: cover;
+                height: auto;
+                width: 100vw;
+                overflow-x: hidden;
+
+        }
+
+
+        * {
+                margin: 0;
+                padding: 0;
+
+        }
+
+        /*
+        *******************************************************************************************************
+        ******************************************** typos  *********************************************
+        *******************************************************************************************************
+        */
+
+
+        /* *************** POUR LES TEXTES ******************  */
+
+        @font-face {
+                font-family: 'TypoTexteAll';
+                src: url(../../TYPOS/Tonnelier-Medium.ttf);
+        }
+
+
+        /* *************** POUR LES TITRES ******************  */
+
+
+        @font-face {
+                font-family: "TypoTitleAM";
+                src: url(../../TYPOS/ColaneiraDemo-Regular.otf);
+        }
+
+
+        @font-face {
+                font-family: 'TypoTitleAp';
+                src: url(../../TYPOS/Cetary.otf);
+        }
+
+
+
+        /* *************** POUR LES SOUS TITRES ******************  */
+
+        @font-face {
+                font-family: "TypoSousTitre";
+                src: url(../../TYPOS/Socheerful-Regular.ttf);
+        }
+
+
+        /*
+        *******************************************************************************************************
+        ******************************************** COULEURS  *********************************************
+        *******************************************************************************************************
+        */
+
+
+
+
+        :root {
+                --couleur_vert: #7AA36E;
+                --couleur_blanche: white;
+
+        }
+
+
+
+
+        /*
+        *******************************************************************************************************
+        ******************************************** HEADER  *********************************************
+        *******************************************************************************************************
+        */
+
+
+
+        header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100vw;
+                height: 13%;
+        }
+
+
+
+        #Logo {
+                height: 10vh;
+                padding: 2%;
+                position: relative;
+                top: 5%;
+
+        }
+
+
+
+        .HeaderButtons {
+                display: flex;
+                justify-content: space-around;
+                height: 12%;
+                width: 55%;
+
+        }
+
+
+        #TextHomeH {
+                color: var(--couleur_vert);
+                font-size: 1.5vh;
+                font-family: 'TypoTexteAll';
+                height: 2vh;
+                width: 9vw;
+                text-decoration: none;
+
+        }
+
+
+        #TextProposH {
+
+                color: var(--couleur_blanche);
+                font-size: 1.5vh;
+                font-family: 'TypoTexteAll';
+                height: 2vh;
+                text-decoration: none;
+
+        }
+
+
+
+        #TextProjetsH {
+
+                color: var(--couleur_vert);
+                font-size: 1.5vh;
+                font-family: 'TypoTexteAll';
+                height: 2vh;
+                width: 10vw;
+                text-decoration: none;
+                position: relative;
+                right: 2%;
+
+        }
+
+
+
+        #TextContactH {
+                color: var(--couleur_vert);
+                font-size: 1.5vh;
+                font-family: 'TypoTexteAll';
+                height: 2vh;
+                width: 9vw;
+                text-decoration: none;
+
+        }
+
+
+
+        /*
+        *******************************************************************************************************
+        ******************************************** P1  *********************************************
+        *******************************************************************************************************
+        */
+
+
+
+        #TitleAll {
+
+                position: relative;
+                height: 30%;
+                width: 100%;
+
+        }
+
+
+
+        #TitleAP {
+                position: absolute;
+                font-family: 'TypoTitleAp';
+                left: 31%;
+                height: 5vh;
+                width: 35vw;
+                font-size: 8vw;
+                color: var(--couleur_vert);
+                top: 20%;
+        }
+
+
+
+        #TitleAM {
+                position: absolute;
+                font-family: 'TypoTitleAM';
+                left: 31%;
+                top: 41%;
+                height: 5vh;
+                width: 14vh;
+                font-size: 8vw;
+                color: var(--couleur_vert);
+                transition: all 1s;
+
+        }
+
+
+        #TitleAM:hover {
+
+                transition: all 1s;
+                font-family: 'TypoTitleAp';
+
+
+        }
+
+
+        /*
+        *******************************************************************************************************
+        ******************************************** P2  *********************************************
+        *******************************************************************************************************
+        */
+
+
+        #AllPage {
+                width: 50%;
+                height: 50%;
+        }
+
+
+        /*************************************** MOI  ****************************************/
+
+        #Moi {
+                display: flex;
+                height: 50vh;
+                width: 100vw;
+
+        }
+
+
+
+        #TexteMoi {
+
+                color: var(--couleur_blanche);
+                font-size: 3vh;
+                font-family: 'TypoTexteAll';
+                height: 32vh;
+                width: 56vw;
+                text-decoration: none;
+                position: relative;
+                left: 24%;
+                top: 23%;
+
+        }
+
+
+        #TexteMoiST {
+                color: var(--couleur_vert);
+
+        }
+
+
+
+        @keyframes typing {
+                from {
+                        width: 0
+                }
+
+                to {
+                        width: 100%
+                }
+        }
+
+
+        @keyframes blink-caret {
+
+                from,
+                to {
+                        border-color: transparent
+                }
+
+                50% {
+                        border-color: orange;
+                }
+        }
+
+
+
+
+
+        #ImageMoi {
+                display: none;
+        }
+
+
+
+
+
+
+        /*************************************** DIPLOME  ****************************************/
+
+
+        #Diplome {
+                display: flex;
+                height: 75vh;
+                width: 100vw;
+        }
+
+
+        #TexteDiplome {
+                color: var(--couleur_blanche);
+                font-size: 3vh;
+                font-family: 'TypoTexteAll';
+                height: 35vh;
+                width: 74vw;
+                text-decoration: none;
+                position: relative;
+                left: 19%;
+                top: 10%;
+
+        }
+
+
+
+
+        #ImageDipBrevet {
+                display: none;
+        }
+
+
+        #ImageDipBAC {
+                display: none;
+        }
+
+
+
+
+        /*************************************** FIN  ****************************************/
+
+
+        #LeFooter {
+
+                display: flex;
+                height: 5vh;
+                width: 100vw;
+
+        }
+
+
+        #TexteFin {
+
+                position: relative;
+                top: 1%;
+                left: 10%;
+                display: flex;
+                justify-content: center;
+                color: gray;
+                font-family: 'TypoTexteAll';
+                height: 8vh;
+                width: 37vh;
+                font-size: 1vh;
+
+        }
+}

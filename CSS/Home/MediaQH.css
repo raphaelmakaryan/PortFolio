@@ -1,0 +1,526 @@
+/*
+*******************************************************************************************************
+******************************************** MEDIA QUERIES *********************************************
+*******************************************************************************************************
+*/
+
+@media screen and (orientation:portrait) {
+
+
+    /*
+    *******************************************************************************************************
+    ******************************************** ALL  *********************************************
+    *******************************************************************************************************
+    */
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(../../IMGS/Home/Background.gif);
+        background-repeat: repeat;
+        background-size: cover;
+        height: auto;
+        width: 100vw;
+        overflow-x: hidden;
+
+    }
+
+
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    /*
+    *******************************************************************************************************
+    ******************************************** typos  *********************************************
+    *******************************************************************************************************
+    */
+
+
+    /* *************** POUR LES TEXTES ******************  */
+
+    @font-face {
+        font-family: 'TypoTexteAll';
+        src: url(../../TYPOS/Tonnelier-Medium.ttf);
+    }
+
+
+    /* *************** POUR LES TITRES ******************  */
+
+
+    @font-face {
+        font-family: "TypoTitleForm";
+        src: url(../../TYPOS/ColaneiraDemo-Regular.otf);
+    }
+
+
+    @font-face {
+        font-family: 'TypoTitleRM';
+        src: url(../../TYPOS/Cetary.otf);
+    }
+
+
+
+    /* *************** POUR LES SOUS TITRES ******************  */
+
+    @font-face {
+        font-family: "TypoSousTitre";
+        src: url(../../TYPOS/Socheerful-Regular.ttf);
+    }
+
+
+    /*
+    *******************************************************************************************************
+    ******************************************** COULEURS  *********************************************
+    *******************************************************************************************************
+    */
+
+
+
+
+    :root {
+        --couleur_vert: #7AA36E;
+        --couleur_blanche: white;
+
+    }
+
+
+
+
+    /*
+    *******************************************************************************************************
+    ******************************************** HEADER  *********************************************
+    *******************************************************************************************************
+    */
+
+
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 10%;
+    }
+
+
+
+    #Logo {
+        height: 10vh;
+        padding: 2%;
+        position: relative;
+        top: 5%;
+    }
+
+
+
+    .HeaderButtons {
+        display: flex;
+        justify-content: space-around;
+        height: 13%;
+        width: 40%;
+
+    }
+
+
+    #TextHomeH {
+
+        color: var(--couleur_blanche);
+        font-size: 1.2vh;
+        font-family: 'TypoTexteAll';
+        height: 2vh;
+        width: 6vw;
+        text-decoration: none;
+        position: relative;
+        right: 5%;
+
+    }
+
+
+    #TextProposH {
+
+        color: var(--couleur_vert);
+        font-size: 1.2vh;
+        font-family: 'TypoTexteAll';
+        height: 2vh;
+        width: 12vw;
+        text-decoration: none;
+        position: relative;
+        right: 1%;
+
+    }
+
+
+
+    #TextProjetsH {
+
+        color: var(--couleur_vert);
+        font-size: 1.2vh;
+        font-family: 'TypoTexteAll';
+        height: 2vh;
+        width: 9vw;
+        text-decoration: none;
+        left: 0%;
+        position: relative;
+    }
+
+
+    #TextContactH {
+
+        color: var(--couleur_vert);
+        font-size: 1.2vh;
+        font-family: 'TypoTexteAll';
+        height: 2vh;
+        width: 9vw;
+        text-decoration: none;
+        position: relative;
+        left: 9%;
+
+    }
+
+
+
+    #TextProposH:hover,
+    #TextProjetsH:hover,
+    #TextLabH:hover,
+    #TextContactH:hover {
+        color: var(--couleur_blanche);
+    }
+
+
+
+    /*
+    *******************************************************************************************************
+    ******************************************** P1  *********************************************
+    *******************************************************************************************************
+    */
+
+
+    #TitleAll {
+
+        position: relative;
+        height: 50%;
+        width: 100%;
+
+    }
+
+
+
+    #TitleRaph {
+        position: absolute;
+        font-family: 'TypoTitleRM';
+        left: 26%;
+        top: 18%;
+        height: 6vh;
+        width: 43vw;
+        font-size: 10vw;
+        color: var(--couleur_vert);
+    }
+
+
+
+    #TitleMAK {
+        position: absolute;
+        font-family: 'TypoTitleRM';
+        left: 26%;
+        top: 30%;
+        height: 6vh;
+        width: 51vw;
+        font-size: 10vw;
+        color: var(--couleur_vert);
+
+    }
+
+
+    #TitleForm {
+        position: absolute;
+        font-family: 'TypoTitleForm';
+        left: 26%;
+        top: 41%;
+        height: 10vh;
+        width: 57vw;
+        font-size: 10vw;
+        color: var(--couleur_vert);
+
+    }
+
+
+    /*
+        *******************************************************************************************************
+        ******************************************** P2  *********************************************
+        *******************************************************************************************************
+        */
+
+
+    #AllPage {
+        width: 50%;
+        height: 50%;
+    }
+
+
+    /*************************************** A PROPOS  ****************************************/
+
+
+    .aPropos {
+        display: flex;
+        height: 50vh;
+        width: 100vw;
+    }
+
+
+
+
+    #TexteAProposP2 {
+        position: relative;
+        left: 20%;
+        color: var(--couleur_vert);
+        font-size: 5vh;
+        font-family: "TypoSousTitre";
+        height: 5vh;
+        width: 51vw;
+        text-decoration: none;
+    }
+
+
+
+    #ImageAProposP2 {
+        width: 0%;
+        height: 0%;
+        position: relative;
+        right: 65%;
+        top: 56%;
+    }
+
+
+    #ImgRealAP {
+        height: 21vh;
+        width: 100vw;
+    }
+
+
+    #DescAProposP2 {
+        color: var(--couleur_blanche);
+        font-size: 2vh;
+        font-family: 'TypoTexteAll';
+        height: 16vh;
+        width: 33vw;
+        position: relative;
+        left: 9%;
+        top: 12%;
+        text-decoration: none;
+    }
+
+
+
+    #NavAProposP2 {
+        color: var(--couleur_blanche);
+        font-size: 2vh;
+        font-family: 'TypoTexteAll';
+        height: 2vh;
+        width: 32vw;
+        text-decoration: underline;
+        position: relative;
+        left: 34%;
+        top: 47%;
+
+    }
+
+
+    #NavAProposP2:hover {
+        color: var(--couleur_vert);
+    }
+
+
+
+
+
+
+    /*************************************** PROJETS  ****************************************/
+
+
+
+    .Projets {
+        display: flex;
+        height: 50vh;
+        width: 100vw;
+        position: relative;
+        top: 40%;
+    }
+
+
+
+    #TexteProjetsP2 {
+        color: var(--couleur_vert);
+        font-size: 5vh;
+        font-family: "TypoSousTitre";
+        height: 5vh;
+        width: 23vw;
+        position: relative;
+        left: 11%;
+        top: 52%;
+        text-decoration: none;
+
+    }
+
+
+
+    #ImageProjetsP2 {
+        position: relative;
+        width: 55%;
+        height: 65%;
+        top: 59%;
+    }
+
+
+    #ImgRealPJ {
+        height: 21vh;
+        width: 100vw;
+    }
+
+
+    #DescProjetsP2 {
+        color: var(--couleur_blanche);
+        font-size: 2vh;
+        font-family: 'TypoTexteAll';
+        height: 13vh;
+        width: 113vw;
+        position: relative;
+        right: 50%;
+        top: 18%;
+        text-decoration: none;
+    }
+
+
+
+    #NavProjetsP2 {
+        color: var(--couleur_blanche);
+        font-size: 2vh;
+        font-family: 'TypoTexteAll';
+        height: 5vh;
+        width: 124%;
+        position: relative;
+        right: 1vh;
+        top: 47%;
+        text-decoration: underline;
+
+    }
+
+
+    #NavProjetsP2:hover {
+        color: var(--couleur_vert);
+    }
+
+
+
+
+
+
+    /*************************************** CONTACT  ****************************************/
+
+
+    .Contact {
+        color: var(--couleur_blanche);
+        font-size: 2vh;
+        font-family: 'TypoTexteAll';
+        height: 49vh;
+        width: 100vw;
+        position: relative;
+        top: 81%;
+        text-decoration: none;
+    }
+
+
+
+    #TexteContactP2 {
+        color: var(--couleur_vert);
+        font-size: 4vh;
+        font-family: "TypoSousTitre";
+        height: 4vh;
+        width: 6vw;
+        position: relative;
+        left: 14%;
+        text-decoration: none;
+        top: 75%;
+
+    }
+
+
+    #ImageContactP2 {
+        position: relative;
+        width: 225%;
+        height: 65%;
+        left: 0%;
+        top: 16%;
+
+    }
+
+    #ImgRealCT {
+        height: 21vh;
+        width: 100vw;
+    }
+
+
+
+    #DescContactP2 {
+
+        color: var(--couleur_blanche);
+        font-size: 2.2vh;
+        font-family: 'TypoTexteAll';
+        height: 18vh;
+        width: 30vw;
+        position: relative;
+        left: 7%;
+        top: 5%;
+        text-decoration: none;
+
+    }
+
+
+    #NavContactP2 {
+        color: var(--couleur_blanche);
+        font-size: 2vh;
+        font-family: 'TypoTexteAll';
+        height: 2vh;
+        width: 0vw;
+        position: relative;
+        left: 72%;
+        top: -35%;
+        text-decoration: underline;
+    }
+
+
+    #NavContactP2:hover {
+        color: var(--couleur_vert);
+    }
+
+
+    /*
+    *******************************************************************************************************
+    ******************************************** FIN  *********************************************
+    *******************************************************************************************************
+    */
+
+
+
+    #LeFooter {
+        height: 8vh;
+        width: 100vw;
+        position: relative;
+        top: 85%;
+    }
+
+
+    #TexteFin {
+        position: relative;
+        left: 3%;
+        display: flex;
+        justify-content: center;
+        color: gray;
+        font-family: 'TypoTexteAll';
+        font-size: 1.2vh;
+
+    }
+}

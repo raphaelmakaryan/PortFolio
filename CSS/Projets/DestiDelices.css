@@ -1,0 +1,531 @@
+@media screen and (orientation : landscape) {
+
+
+
+
+
+
+
+    /*
+*******************************************************************************************************
+******************************************** ALL  *********************************************
+*******************************************************************************************************
+*/
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(../../IMGS/Projets/Background.gif);
+        background-repeat: repeat;
+        background-size: cover;
+        height: auto;
+        width: 100vw;
+        overflow-x: hidden;
+
+    }
+
+
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    /*
+*******************************************************************************************************
+******************************************** typos  *********************************************
+*******************************************************************************************************
+*/
+
+
+    /* *************** POUR LES TEXTES ******************  */
+
+    @font-face {
+        font-family: 'TypoTexteAll';
+        src: url(../../TYPOS/Tonnelier-Medium.ttf);
+    }
+
+
+    /* *************** POUR LES TITRES ******************  */
+
+
+    @font-face {
+        font-family: "TypoTitle2";
+        src: url(../../TYPOS/ColaneiraDemo-Regular.otf);
+    }
+
+
+    @font-face {
+        font-family: 'TypoTitle1';
+        src: url(../../TYPOS/Cetary.otf);
+    }
+
+
+
+    /* *************** POUR LES SOUS TITRES ******************  */
+
+    @font-face {
+        font-family: "TypoSousTitre";
+        src: url(../../TYPOS/Socheerful-Regular.ttf);
+    }
+
+
+    /*
+*******************************************************************************************************
+******************************************** COULEURS  *********************************************
+*******************************************************************************************************
+*/
+
+
+
+
+    :root {
+        --couleur_vert: #7AA36E;
+        --couleur_blanche: white;
+
+    }
+
+
+
+
+    /*
+*******************************************************************************************************
+******************************************** HEADER  *********************************************
+*******************************************************************************************************
+*/
+
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: 20%;
+    }
+
+
+
+    #Logo {
+        height: 16vh;
+        padding: 50px;
+
+    }
+
+
+
+    .HeaderButtons {
+        display: flex;
+        justify-content: space-around;
+        height: 13%;
+        width: 40%;
+
+    }
+
+
+    #TextHomeH {
+
+        color: var(--couleur_vert);
+        font-size: 1.5vh;
+        font-family: 'TypoTexteAll';
+        height: 2vh;
+        width: 3vw;
+        text-decoration: none;
+
+    }
+
+
+    #TextProposH {
+
+        color: var(--couleur_vert);
+        font-size: 1.5vh;
+        font-family: 'TypoTexteAll';
+        height: 2vh;
+        width: 5vw;
+        text-decoration: none;
+
+    }
+
+
+
+    #TextProjetsH {
+
+        color: var(--couleur_vert);
+        font-size: 1.5vh;
+        font-family: 'TypoTexteAll';
+        height: 4vh;
+        width: 4vw;
+        text-decoration: none;
+
+    }
+
+
+
+
+    #TextContactH {
+        color: var(--couleur_vert);
+        font-size: 1.5vh;
+        font-family: 'TypoTexteAll';
+        height: 4vh;
+        width: 4vw;
+        text-decoration: none;
+
+    }
+
+
+
+    #TextHomeH:hover,
+    #TextLabH:hover,
+    #TextContactH:hover,
+    #TextHomeH:hover {
+        color: var(--couleur_blanche);
+    }
+
+
+
+    /*
+*******************************************************************************************************
+******************************************** P1  *********************************************
+*******************************************************************************************************
+*/
+
+
+    #AllPage {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #Title {
+
+        position: relative;
+        height: 70%;
+        width: 100%;
+
+    }
+
+
+    #TitlePS {
+        position: absolute;
+        font-family: 'TypoTitle2';
+        left: 30%;
+        top: 28%;
+        height: 14vh;
+        width: 57vw;
+        font-size: 8vw;
+        color: var(--couleur_vert);
+        transition: all 1s;
+
+    }
+
+
+
+    #TitlePS:hover {
+
+        transition: all 1s;
+        font-family: 'TypoTitle1';
+
+    }
+
+
+    /*
+*******************************************************************************************************
+******************************************** P2  *********************************************
+*******************************************************************************************************
+*/
+
+
+    /**************************** ENTREE ****************************** */
+
+
+    #Entree {
+        width: 50%;
+        height: 50%;
+
+
+    }
+
+
+    #ImgEntreE {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        left: 46%;
+
+    }
+
+
+    #ImgEntreJ {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        left: 46%;
+        top: 6%;
+
+    }
+
+    #TextEntree {
+
+        position: relative;
+        height: 20%;
+        width: 20%;
+        color: var(--couleur_vert);
+        left: 45%;
+        font-family: "TypoSousTitre";
+        font-size: 2vw;
+        top: 8%;
+    }
+
+
+
+
+    /**************************** SUJET ****************************** */
+
+
+
+    #Sujet {
+
+        width: 50%;
+        height: 50%;
+
+    }
+
+
+    #TextSujet {
+
+        position: relative;
+        height: 20%;
+        width: 20%;
+        color: var(--couleur_vert);
+        left: 129%;
+        font-family: "TypoSousTitre";
+        font-size: 2vw;
+        top: 142%;
+    }
+
+
+    #DescPS {
+
+        position: relative;
+        height: 46%;
+        width: 99%;
+        color: var(--couleur_vert);
+        left: 47%;
+        font-family: 'TypoTexteAll';
+        font-size: 1.5vw;
+        top: 138%;
+    }
+
+
+    /**************************** SCREEN ELSA ****************************** */
+
+
+
+
+    #ScreensE {
+        display: flex;
+        position: relative;
+        top: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+
+
+
+    #TextScreensE {
+
+        position: relative;
+        height: 1%;
+        width: 13%;
+        color: var(--couleur_vert);
+        right: 28%;
+        font-family: "TypoSousTitre";
+        font-size: 2vw;
+    }
+
+
+
+    .LesImagesE {
+        position: absolute;
+        margin-top: -5%;
+        margin-left: 9%;
+        margin-right: -8%;
+        display: flex;
+        height: 80%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: space-between;
+    }
+
+
+
+
+    .IntBoitesE {
+        width: 45%;
+        transition: width 1s;
+
+        margin-left: 3%;
+        padding: 1%;
+        margin-bottom: 1vh;
+    }
+
+
+
+    .ALLE {
+        width: 50%;
+        margin: auto;
+    }
+
+
+
+    #CreditsE {
+        color: var(--couleur_blanche);
+        position: relative;
+        height: 5vh;
+        width: 51vh;
+        right: 47%;
+        font-size: 2vw;
+        font-family: 'TypoTexteAll';
+        text-decoration: none;
+    }
+
+
+    #CreditsAE {
+        color: var(--couleur_vert);
+        text-decoration: none;
+
+    }
+
+
+    /**************************** SCREEN Jade ****************************** */
+
+
+
+
+    #ScreensJ {
+        display: flex;
+        position: relative;
+        top: 260%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+
+
+
+    #TextScreensJ {
+
+        position: relative;
+        height: 1%;
+        width: 13%;
+        color: var(--couleur_vert);
+        right: 28%;
+        font-family: "TypoSousTitre";
+        font-size: 2vw;
+    }
+
+
+
+
+
+
+
+
+
+    .LesImagesJ {
+        position: absolute;
+        margin-top: -5%;
+        margin-left: 9%;
+        margin-right: -8%;
+        display: flex;
+        height: 80%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: space-between;
+    }
+
+
+
+
+    .IntBoitesJ {
+        width: 45%;
+        transition: width 1s;
+        margin-left: 3%;
+        padding: 1%;
+        margin-bottom: 1vh;
+    }
+
+
+
+    .ALLJ {
+        width: 50%;
+        margin: auto;
+    }
+
+
+
+
+    #CreditsJ {
+        color: var(--couleur_blanche);
+        position: relative;
+        height: 5vh;
+        width: 51vh;
+        right: 9%;
+        top: 265%;
+        font-size: 2vw;
+        font-family: 'TypoTexteAll';
+        text-decoration: none;
+    }
+
+
+
+    #CreditsAJ {
+        color: var(--couleur_vert);
+        text-decoration: none;
+
+    }
+
+
+
+
+
+    /*
+*******************************************************************************************************
+******************************************** FIN  *********************************************
+*******************************************************************************************************
+*/
+
+
+
+    #LeFooter {
+
+        display: flex;
+        position: relative;
+        top: 325%;
+        height: 8vh;
+        width: 100vw;
+
+
+    }
+
+
+    #TexteFin {
+
+        position: relative;
+        left: 38%;
+        display: flex;
+        justify-content: center;
+        color: gray;
+        font-family: 'TypoTexteAll';
+        top: 119%;
+
+    }
+
+
+}
