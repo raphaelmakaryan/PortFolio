@@ -283,7 +283,6 @@ header{
     text-decoration: none;
     position: relative;
     left: 12%;
-    animation: ArrivedLeft 2s;
 }
 
 
@@ -293,7 +292,6 @@ header{
     height: 65%;
     position: relative;
     left: 10%;
-    animation: ArrivedLeft 2s;
 }
 
 
@@ -307,7 +305,6 @@ header{
     position: relative;
     left: 6%;
     top: 5%;
-    animation: ArrivedLeft 2s;
 }
 
 
@@ -322,7 +319,6 @@ header{
     position: relative;
     left: 9%;
     top: 58%;
-    animation: ArrivedLeft 2s;
 }
 
 
@@ -358,7 +354,6 @@ header{
     position: relative;
     left: 148%;
     text-decoration: none;
-    animation: ArrivedRight 2s;
 }
 
 
@@ -368,7 +363,6 @@ header{
     left: 8%;
     width: 55%;
     height: 65%;
-    animation: ArrivedRight 2s;
 
 }
 
@@ -386,7 +380,6 @@ header{
     left: 11%;
     top: 5%;
     text-decoration: none;
-    animation: ArrivedRight 2s;
 }
 
 
@@ -401,7 +394,6 @@ header{
     right: 12%;
     top: 59%;
     text-decoration: underline;
-    animation: ArrivedRight 2s;
 }
 
 
@@ -436,8 +428,6 @@ header{
     position: relative;
     left: 14%;
     text-decoration: none;
-    animation: ArrivedLeft 2s;
-
 }
 
 
@@ -446,7 +436,6 @@ header{
     width: 225%;
     height: 65%;
     left: 15%;
-    animation: ArrivedLeft 2s;
 }
 
 
@@ -461,7 +450,6 @@ header{
     left: 7%;
     top: 5%;
     text-decoration: none;
-    animation: ArrivedLeft 2s;
 }
 
 
@@ -475,8 +463,6 @@ header{
     right: 77%;
     top: 58%;
     text-decoration: underline;
-    animation: ArrivedLeft 2s;
-
 }
 
 
