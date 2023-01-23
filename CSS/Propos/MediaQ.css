@@ -253,14 +253,15 @@
         #TexteMoi {
 
                 color: var(--couleur_blanche);
-                font-size: 3vh;
+                font-size: 1.8vh;
                 font-family: 'TypoTexteAll';
                 height: 32vh;
                 width: 56vw;
+                text-align: center;
                 text-decoration: none;
                 position: relative;
                 left: 24%;
-                top: 23%;
+                top: 10%;
 
         }
 
@@ -269,82 +270,6 @@
                 color: var(--couleur_vert);
 
         }
-
-
-
-        @keyframes typing {
-                from {
-                        width: 0
-                }
-
-                to {
-                        width: 100%
-                }
-        }
-
-
-        @keyframes blink-caret {
-
-                from,
-                to {
-                        border-color: transparent
-                }
-
-                50% {
-                        border-color: orange;
-                }
-        }
-
-
-
-
-
-        #ImageMoi {
-                display: none;
-        }
-
-
-
-
-
-
-        /*************************************** DIPLOME  ****************************************/
-
-
-        #Diplome {
-                display: flex;
-                height: 75vh;
-                width: 100vw;
-        }
-
-
-        #TexteDiplome {
-                color: var(--couleur_blanche);
-                font-size: 3vh;
-                font-family: 'TypoTexteAll';
-                height: 35vh;
-                width: 74vw;
-                text-decoration: none;
-                position: relative;
-                left: 19%;
-                top: 10%;
-
-        }
-
-
-
-
-        #ImageDipBrevet {
-                display: none;
-        }
-
-
-        #ImageDipBAC {
-                display: none;
-        }
-
-
-
 
         /*************************************** FIN  ****************************************/
 
@@ -362,14 +287,12 @@
 
                 position: relative;
                 top: 1%;
-                left: 10%;
+                left: 3%;
                 display: flex;
                 justify-content: center;
                 color: gray;
                 font-family: 'TypoTexteAll';
-                height: 8vh;
-                width: 37vh;
-                font-size: 1vh;
+                font-size: 1.5vh;
 
         }
 }

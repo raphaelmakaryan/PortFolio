@@ -271,16 +271,16 @@
         display: flex;
         justify-content: center;
         position: relative;
-        right: 4%;
+        right: 14%;
         height: 46%;
         width: 34%;
-        top: 27%;
+        top: 55%;
     }
 
 
     /* ********************* INSTA  ********************** */
 
-    #InstaCT {
+    #GitCT {
         height: 11vh;
         width: 11vw;
         position: relative;
@@ -289,7 +289,7 @@
     }
 
 
-    #RedicIns {
+    #RedicGit {
 
         height: 14vh;
         width: 12vh;
@@ -321,28 +321,25 @@
 
     /* ********************* TEXTE  ********************** */
 
-    #TitleAllContact {
-        color: var(--couleur_vert);
-        font-size: 8vh;
-        height: 7vh;
-        width: 39vH;
-        font-family: "TypoSousTitre";
-        position: relative;
-        left: 72%;
-    }
-
 
     #DescAllContact {
         color: var(--couleur_blanche);
-        font-size: 3vh;
+        font-size: 2.5vh;
         height: 15vh;
         width: auto;
         position: relative;
-        top: 45%;
-        right: 20%;
+        top: 0%;
+        text-align: center;
+        left: 25%;
         font-family: 'TypoTexteAll';
     }
 
+
+    #forinter {
+        text-decoration: none;
+        text-align: none;
+
+    }
 
     /*
         *******************************************************************************************************
@@ -363,14 +360,14 @@
 
     #TexteFin {
         position: relative;
-        left: 43%;
+        left: 24%;
         display: flex;
         justify-content: center;
         color: gray;
         font-family: 'TypoTexteAll';
-        width: 50vh;
-        top: 46%;
-        font-size: 2vh;
-        height: 24%;
+        width: 100%;
+        top: 0%;
+        font-size: 1.2vh;
     }
+
 }

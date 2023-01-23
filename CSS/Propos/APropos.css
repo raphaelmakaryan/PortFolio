@@ -255,7 +255,7 @@
 
     #Moi {
         display: flex;
-        height: 50vh;
+        height: 55vh;
         width: 100vw;
 
     }
@@ -269,10 +269,11 @@
         font-family: 'TypoTexteAll';
         height: 32vh;
         width: 38vw;
+        text-align: center;
         text-decoration: none;
         position: relative;
-        left: 24%;
-        top: 35%;
+        left: 27%;
+        top: 20%;
 
     }
 
@@ -280,107 +281,6 @@
     #TexteMoiST {
         color: var(--couleur_vert);
 
-    }
-
-
-
-    @keyframes typing {
-        from {
-            width: 0
-        }
-
-        to {
-            width: 100%
-        }
-    }
-
-
-    @keyframes blink-caret {
-
-        from,
-        to {
-            border-color: transparent
-        }
-
-        50% {
-            border-color: orange;
-        }
-    }
-
-
-
-
-
-
-
-
-
-
-
-    #ImageMoi {
-        width: 30%;
-        height: 108%;
-        background: green;
-        position: relative;
-        left: 14%;
-        background-image: url(../../IMGS/Propos/ImgME.png);
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*************************************** DIPLOME  ****************************************/
-
-
-    #Diplome {
-        display: flex;
-        height: 75vh;
-        width: 100vw;
-    }
-
-
-    #TexteDiplome {
-
-        color: var(--couleur_blanche);
-        font-size: 3vh;
-        font-family: 'TypoTexteAll';
-        height: 30vh;
-        width: 30vw;
-        text-decoration: none;
-        position: relative;
-        left: 14%;
-        top: 45%;
-
-
-    }
-
-
-
-
-    #ImageDipBrevet {
-        width: 25%;
-        height: 60%;
-        position: relative;
-        left: 18%;
-        top: 25%;
-    }
-
-
-    #ImageDipBAC {
-        width: 25%;
-        height: 60%;
-        position: relative;
-        left: 18%;
-        top: 25%;
     }
 
 
@@ -401,7 +301,7 @@
 
         position: relative;
         top: 200%;
-        left: 40%;
+        left: 32%;
         display: flex;
         justify-content: center;
         color: gray;
