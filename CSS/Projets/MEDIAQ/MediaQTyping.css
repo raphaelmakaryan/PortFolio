@@ -62,7 +62,7 @@
 
     @font-face {
         font-family: "TypoSousTitre";
-        src: url(../../../TYPOS/Socheerful-Regular.ttf);
+        src: url(../../../TYPOS/Socheerful-Regular.otf);
     }
 
 
@@ -248,7 +248,6 @@
     #ImgEntree {
         position: relative;
         height: 74%;
-        /* width: 115%; */
         left: 7%;
         top: 5%;
 
@@ -368,74 +367,5 @@
         width: 90%;
         margin: auto;
     }
-
-
-    /*
-*******************************************************************************************************
-******************************************** FIN  *********************************************
-*******************************************************************************************************
-*/
-
-
-
-    #LeFooter {
-        display: flex;
-        position: relative;
-        top: 80%;
-        height: 8vh;
-        width: 100vw;
-
-
-    }
-
-
-    #TexteFin {
-
-        position: relative;
-        left: 5%;
-        display: flex;
-        justify-content: center;
-        color: gray;
-        font-family: 'TypoTexteAll';
-        top: 85%;
-        font-size: 1.2vh;
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

@@ -64,7 +64,7 @@
 
     @font-face {
         font-family: "TypoSousTitre";
-        src: url(../../TYPOS/Socheerful-Regular.ttf);
+        src: url(../../TYPOS/Socheerful-Regular.otf);
     }
 
 
@@ -228,30 +228,6 @@
         font-size: 8vw;
 
         color: var(--couleur_vert);
-    }
-
-
-
-    #TitleJECT {
-        position: absolute;
-        font-family: 'TypoTitleJECT';
-        left: 29%;
-        top: 28%;
-        height: 14vh;
-        width: 57vw;
-        font-size: 7.5vw;
-        color: var(--couleur_vert);
-        transition: all 1s;
-
-    }
-
-
-    #TitleJECT:hover {
-
-        transition: all 1s;
-        font-family: 'TypoTitlePRJ';
-
-
     }
 
 
@@ -462,39 +438,4 @@
     #TexteDC {
         color: #7289da
     }
-
-
-
-    /*
-*******************************************************************************************************
-******************************************** FIN  *********************************************
-*******************************************************************************************************
-*/
-
-
-
-    #LeFooter {
-
-        display: flex;
-        position: relative;
-        top: 175%;
-        height: 8vh;
-        width: 100vw;
-
-
-    }
-
-
-    #TexteFin {
-
-        position: relative;
-        left: 76%;
-        display: flex;
-        justify-content: center;
-        color: gray;
-        font-family: 'TypoTexteAll';
-        top: 119%;
-
-    }
-
 }

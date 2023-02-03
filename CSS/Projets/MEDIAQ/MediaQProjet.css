@@ -62,7 +62,7 @@
 
     @font-face {
         font-family: "TypoSousTitre";
-        src: url(../../../TYPOS/Socheerful-Regular.ttf);
+        src: url(../../../TYPOS/Socheerful-Regular.otf);
     }
 
 
@@ -448,42 +448,6 @@
 
     #TexteDC {
         color: #7289da
-    }
-
-
-
-    /*
-    *******************************************************************************************************
-    ******************************************** FIN  *********************************************
-    *******************************************************************************************************
-    */
-
-
-
-    #LeFooter {
-
-        display: flex;
-        position: relative;
-        top: 199%;
-        height: 14vh;
-        width: 100vw;
-
-
-    }
-
-
-    #TexteFin {
-
-        position: relative;
-        left: 1%;
-        display: flex;
-        justify-content: center;
-        color: gray;
-        font-family: 'TypoTexteAll';
-        top: 93%;
-        width: 47vh;
-        font-size: 1.2vh;
-
     }
 
 }

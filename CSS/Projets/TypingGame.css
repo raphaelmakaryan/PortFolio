@@ -63,7 +63,7 @@
 
     @font-face {
         font-family: "TypoSousTitre";
-        src: url(../../TYPOS/Socheerful-Regular.ttf);
+        src: url(../../TYPOS/Socheerful-Regular.otf);
     }
 
 
@@ -216,14 +216,6 @@
 
 
 
-    #TitleTG:hover {
-
-        transition: all 1s;
-        font-family: 'TypoTitle1';
-
-    }
-
-
     /*
 *******************************************************************************************************
 ******************************************** P2  *********************************************
@@ -372,39 +364,5 @@
         width: 50%;
         margin: auto;
     }
-
-
-    /*
-*******************************************************************************************************
-******************************************** FIN  *********************************************
-*******************************************************************************************************
-*/
-
-
-
-    #LeFooter {
-
-        display: flex;
-        position: relative;
-        top: 80%;
-        height: 8vh;
-        width: 100vw;
-
-
-    }
-
-
-    #TexteFin {
-
-        position: relative;
-        left: 38%;
-        display: flex;
-        justify-content: center;
-        color: gray;
-        font-family: 'TypoTexteAll';
-        top: 119%;
-
-    }
-
 
 }

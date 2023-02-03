@@ -63,7 +63,7 @@
 
         @font-face {
                 font-family: "TypoSousTitre";
-                src: url(../../TYPOS/Socheerful-Regular.ttf);
+                src: url(../../TYPOS/Socheerful-Regular.otf);
         }
 
 
@@ -201,29 +201,6 @@
                 top: 20%;
         }
 
-
-
-        #TitleAM {
-                position: absolute;
-                font-family: 'TypoTitleAM';
-                left: 31%;
-                top: 41%;
-                height: 5vh;
-                width: 14vh;
-                font-size: 8vw;
-                color: var(--couleur_vert);
-                transition: all 1s;
-
-        }
-
-
-        #TitleAM:hover {
-
-                transition: all 1s;
-                font-family: 'TypoTitleAp';
-
-
-        }
 
 
         /*
