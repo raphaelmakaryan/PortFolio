@@ -170,6 +170,7 @@ header{
 
 
 
+
 #TextProposH:hover,#TextProjetsH:hover,#TextLabH:hover,#TextContactH:hover{
     color: var(--couleur_blanche);
 }
@@ -195,15 +196,11 @@ header{
 
 #TitleRaph{
     position: absolute;
-
     font-family: 'TypoTitleRM';
-
     left: 31%;
-
     height: 16vh;
     width: 37vw;
     font-size: 7vw;
-
     color: var(--couleur_vert);
 }
 
@@ -231,16 +228,7 @@ header{
     width: 57vw;
     font-size: 7vw;
     color: var(--couleur_vert);
-    transition: all 1s;
-
-}
-
-
-#TitleForm:hover {
-    font-family: 'TypoTitleRM';
-    transition: all 1s;
-
-    
+    animation: KeyTitle infinite;
 
 }
 
@@ -469,68 +457,4 @@ header{
 #NavContactP2:hover {
     color: var(--couleur_vert);
 }
-
-
-/*
-*******************************************************************************************************
-******************************************** FIN  *********************************************
-*******************************************************************************************************
-*/
-
-
-
-#LeFooter{
-    display: flex;
-    height: 8vh;
-    width: 100vw;
-   
-}
-
-
-#TexteFin{
-
-    position: relative;
-    left: 40%;
-    display: flex;
-    justify-content: center;
-    color: gray;
-    font-family: 'TypoTexteAll';
-
-}
-
-
-
-
-/*
-*******************************************************************************************************
-******************************************** KEY  *********************************************
-*******************************************************************************************************
-
-
-@keyframes ArrivedLeft {
-
-    from {
-        margin-left: -60vw;
-    }
-
-    to {
-        margin-left: 0vw;
-    }
-}
-
-
-
-@keyframes ArrivedRight {
-    from {
-        margin-right: 60vw;
-    }
-
-    to {
-        margin-right: 0vw;
-    }
-}
-
-
-}
-*/
 }

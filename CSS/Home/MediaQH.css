@@ -497,32 +497,4 @@
     #NavContactP2:hover {
         color: var(--couleur_vert);
     }
-
-
-    /*
-    *******************************************************************************************************
-    ******************************************** FIN  *********************************************
-    *******************************************************************************************************
-    */
-
-
-
-    #LeFooter {
-        height: 8vh;
-        width: 100vw;
-        position: relative;
-        top: 85%;
-    }
-
-
-    #TexteFin {
-        position: relative;
-        left: 3%;
-        display: flex;
-        justify-content: center;
-        color: gray;
-        font-family: 'TypoTexteAll';
-        font-size: 1.2vh;
-
-    }
 }

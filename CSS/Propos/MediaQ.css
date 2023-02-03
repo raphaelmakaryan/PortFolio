@@ -270,29 +270,4 @@
                 color: var(--couleur_vert);
 
         }
-
-        /*************************************** FIN  ****************************************/
-
-
-        #LeFooter {
-
-                display: flex;
-                height: 5vh;
-                width: 100vw;
-
-        }
-
-
-        #TexteFin {
-
-                position: relative;
-                top: 1%;
-                left: 3%;
-                display: flex;
-                justify-content: center;
-                color: gray;
-                font-family: 'TypoTexteAll';
-                font-size: 1.5vh;
-
-        }
 }

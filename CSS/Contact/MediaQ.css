@@ -213,30 +213,6 @@
     }
 
 
-
-    #TitleCT {
-        position: absolute;
-        font-family: 'TypoTexteCT';
-        left: 25%;
-        top: 40%;
-        height: 5vh;
-        width: 26vw;
-        font-size: 10vw;
-        color: var(--couleur_vert);
-        transition: all 1s;
-
-    }
-
-
-    #TitleCT:hover {
-
-        transition: all 1s;
-        font-family: 'TypoTexteCZ';
-
-
-    }
-
-
     /*
         *******************************************************************************************************
         ******************************************** P2  *********************************************
@@ -339,35 +315,6 @@
         text-decoration: none;
         text-align: none;
 
-    }
-
-    /*
-        *******************************************************************************************************
-        ******************************************** FIN  *********************************************
-        *******************************************************************************************************
-        */
-
-
-
-    #LeFooter {
-        display: flex;
-        height: 13vh;
-        width: 77vw;
-        position: relative;
-        top: 20%;
-    }
-
-
-    #TexteFin {
-        position: relative;
-        left: 24%;
-        display: flex;
-        justify-content: center;
-        color: gray;
-        font-family: 'TypoTexteAll';
-        width: 100%;
-        top: 0%;
-        font-size: 1.2vh;
     }
 
 }

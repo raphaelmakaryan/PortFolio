@@ -283,30 +283,4 @@
 
     }
 
-
-
-
-    /*************************************** FIN  ****************************************/
-
-
-    #LeFooter {
-        display: flex;
-        height: 8vh;
-        width: 100vw;
-
-    }
-
-
-    #TexteFin {
-
-        position: relative;
-        top: 200%;
-        left: 32%;
-        display: flex;
-        justify-content: center;
-        color: gray;
-        font-family: 'TypoTexteAll';
-
-    }
-
 }
