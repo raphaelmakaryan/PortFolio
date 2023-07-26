@@ -1,6 +1,6 @@
 [user]
 	email = tsukizooff@outlook.fr
-	name = KiZo
+	name = TsuKiZo
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
