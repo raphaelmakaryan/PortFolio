@@ -4,18 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="favicon" type="image/png" href="./SITE/IMGS/FOREVER/logo.png" />
+  <link rel="shortcut icon" type="image/png" href="../../IMGS/FOREVER/logo.png" />
   <meta name="description" content="Portfolio - MAKARYAN Raphael - Développeur Web & Mobile">
   <title>Portfolio - MAKARYAN Raphael</title>
-  <link rel="stylesheet" href="./SITE/CSS/indexhome.css">
-
+  <link rel="stylesheet" href="../../CSS/cssprojets.css">
 </head>
 
 <body>
 
-  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.4/dist/lazyload.min.js"></script>
+  <main role="main">
 
-
-  <?php
-  include "./SITE/HOME/contenthome.php";
-  ?>
+    <?php
+    include "header.php";
+    include "informations.php";
+    include "gallerie.php";
+    include "footer.php";
+    ?>

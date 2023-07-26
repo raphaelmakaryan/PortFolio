@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^$ ./pagejdc.php [L]
