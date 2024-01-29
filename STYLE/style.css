@@ -9,14 +9,14 @@
     font-family: 'Hk Grotesk';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/HKGrotesk-Regular.woff') format('woff');
+    src: url('./HKGrotesk-Regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/Jost-Regular.ttf') format('woff');
+    src: url('./Jost-Regular.ttf') format('woff');
 }
 
 * {
@@ -171,6 +171,10 @@ h2::after {
 h3 {
     font-size: var(--taille_police_moyen-1);
     margin-bottom: var(--gouttière_petite);
+}
+
+h4{
+    margin: var(--gouttière_petite_1) 0;
 }
 
 @media(max-width: 500px) {
@@ -360,7 +364,7 @@ body:not(.user-is-tabbing) a:focus {
     z-index: 10;
     visibility: hidden;
     transition: all .4s;
-    text-decoration:none
+    text-decoration: none
 }
 
 
@@ -369,19 +373,20 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .a.RetourMenuTexte {
-    text-decoration:none
+    text-decoration: none
 }
 
 @media(max-width: 900px) {
     .deretourenhaut {
-        display:none;
+        display: none;
     }
 }
 
 @media(max-width: 500px) {
     .deretourenhaut {
-        display:none;
+        display: none;
     }
+
     .retourmenuPop {
         display: flex;
         flex-direction: column;
@@ -487,7 +492,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header {
     background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .4)),
-        url("http://newpt.raphaelmakaryan.fr/IMAGES/Background.gif");
+        url("https://raphaelmakaryan.fr/IMAGES/Background.gif");
     height: 95vh;
     background-size: cover;
     background-position: center;
@@ -614,6 +619,8 @@ body:not(.user-is-tabbing) a:focus {
 @media(max-width: 1240px) {
     .LanguagesDivImage {
         overflow-x: scroll;
+        background-color: lightgrey;
+        cursor: ew-resize;
         padding: var(--gouttière_normal);
     }
 

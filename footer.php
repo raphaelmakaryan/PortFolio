@@ -5,9 +5,10 @@ if ($connection->connect_error) {
     die("Connection impossible: " . $connection->connect_error);
 }
 
-
+$query = "SELECT * FROM `Footer` WHERE 1;";
 $result = $connection->query($query);
 
+$credit = "SELECT `Texte` FROM `Footer` WHERE 1;";
 $resultcredit = $connection->query($credit);
 
 if (!$result || !$resultcredit) {

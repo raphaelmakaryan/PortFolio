@@ -6,7 +6,7 @@ if ($connection->connect_error) {
     die("Connection impossible: " . $connection->connect_error);
 }
 
-
+$query = "SELECT * FROM `Acceuil`";
 $result = $connection->query($query);
 
 if (!$result) {
@@ -20,7 +20,7 @@ while ($row = $result->fetch_assoc()) {
     echo "<span>" . $row["Titre"] . "</span>";
     echo "</h1>";
     echo "<p>" . $row["Metier"] . "</p>";
-
+    // echo "<input type='button' onclick=\"location.href='" . $row["RediBouton"] . "'\" value=\"" . $row["MessageBouton"] . "\">";
     echo "<a href='" . $row["RediBouton"] . "' class='AllButtons'>" . $row["MessageBouton"] . "</a>";
 }
 echo "</div>";

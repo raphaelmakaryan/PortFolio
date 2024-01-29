@@ -4,6 +4,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
     function infoProjet($projectId)
     {
+
         if ($connection->connect_error) {
             die("Connection impossible: " . $connection->connect_error);
         }
@@ -33,6 +34,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     }
     function galerieProjet($projectId)
     {
+
         if ($connection->connect_error) {
             die("Connection impossible: " . $connection->connect_error);
         }
@@ -51,7 +53,8 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                 foreach ($images as $image) {
                     echo "<div class='AProject'>";
                     echo "<div class='ProjectPresimage-box'>";
-                    echo "<img src='" . trim($image) . "' class='ProjectPresimage img-responsive lazy' alt='' data-pagespeed-url-hash='123456789' onload='pagespeed.CriticalImages.checkImageForCriticality(this);'>";
+                    // echo "<img src='" . trim($image) . "' class='ProjectPresimage img-responsive lazy' alt='' data-pagespeed-url-hash='123456789' onload='pagespeed.CriticalImages.checkImageForCriticality(this);'>";
+                    echo "<img src='" . trim($image) . "' class='ProjectPresimage img-responsive lazy' alt=''>";
                     echo "</div>";
                     echo "</div>";
                 }

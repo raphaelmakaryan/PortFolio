@@ -9,10 +9,10 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
         die("Connection impossible: " . $connection->connect_error);
     }
 
-
+    $query = "SELECT `ID`,`Nom`,`Redirection` FROM `Header` WHERE 1;";
     $result = $connection->query($query);
 
-  
+    $projet = "SELECT * FROM `Projets` WHERE ID = $projectId";
     $resultProjet = $connection->query($projet);
 
     if (!$result) {
@@ -35,7 +35,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     echo "</div>";
     while ($row = $resultProjet->fetch_assoc()) {
         echo "<div class='TextsHeader-box row'>";
-        echo "<div class='TextsHeader' style='left:36%'>";
+        echo "<div class='TextsHeader'>";
         echo "<h1 class='TitleHome projet'>";
         echo "<span>" . $row["TitreProjet"] . "</span>";
         echo "</h1>";

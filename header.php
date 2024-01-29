@@ -5,7 +5,7 @@ if ($connection->connect_error) {
     die("Connection impossible: " . $connection->connect_error);
 }
 
-
+$query = "SELECT `ID`,`Nom`,`Redirection` FROM `Header` WHERE 1 and `isProjet` = 0;";
 $result = $connection->query($query);
 
 if (!$result) {

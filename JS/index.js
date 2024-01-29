@@ -1,4 +1,4 @@
-// Au tab ça vise un élément soit lien ou zone formulaire
+//#region ACCESIBILITE
 const PremierOngletTab = (e) => {
   if (e.key === 'Tab') {
     document.body.classList.add('utilisateur_a_tab')
@@ -6,27 +6,22 @@ const PremierOngletTab = (e) => {
     window.removeEventListener('keydown', PremierOngletTab)
     window.addEventListener('mousedown', SourisEnfoncée)
   }
-
 }
+window.addEventListener('keydown', PremierOngletTab)
+//#endregion ACCESIBILITE
 
 
-
+//#region SOURIS  
 const SourisEnfoncée = () => {
   document.body.classList.remove('utilisateur_a_tab')
 
   window.removeEventListener('mousedown', SourisEnfoncée)
   window.addEventListener('keydown', PremierOngletTab)
 }
+//#endregion SOURIS
 
 
-
-
-
-window.addEventListener('keydown', PremierOngletTab)
-
-
-
-
+//#region ROND VERT 
 if (window.location.pathname.includes("index.php")) {
   const backToTopButton = document.querySelector(".deretourenhaut");
   let isBackToTopRendered = false;
@@ -51,7 +46,6 @@ if (window.location.pathname.includes("index.php")) {
 }
 
 
-
 if (window.location.pathname.includes("projet.php")) {
   const returnButton = document.querySelector(".retourmenuPop");
   let isReturn = false;
@@ -74,19 +68,28 @@ if (window.location.pathname.includes("projet.php")) {
   });
 
 }
+//#endregion ROND VERT 
 
 
-if (screen.width <= 500) {
-  let titreProjet = document.getElementsByClassName("TitleHome projet");
-  titreProjet[0].style.position = "relative";
-  titreProjet[0].style.right = screen.width / 100 * 18;
+//#region CENTRAGE DES TITRES
+if (window.location.pathname.includes("projet.php")) {
+  let titreProjet = document.getElementsByClassName("TextsHeader");
+  if (screen.width <= 500) {
+    titreProjet[0].style.left = (screen.width / 2) - (235 / 2);
+  } else {
+    titreProjet[0].style.left = (screen.width / 2) - (385 / 2);
+  }
 }
 
+if (window.location.pathname.includes("index.php")) {
+  let titreHome = document.getElementsByClassName("TextsHeader");
+  if (screen.width <= 500) {
+    titreHome[0].style.left = (screen.width / 2) - (340 / 2);
+  }
+}
 // if (screen.width <= 900) {
 //   let pCredit = document.querySelector("row p");
 //   pCredit[0].style.position = "relative";
 //   pCredit[0].style.right = screen.width / 100 * 18;
 // }
-
-// right: 30% !important; screen.width - screen.width / 100 * 18;
-
+//#endregion CENTRAGE DES TITRES
